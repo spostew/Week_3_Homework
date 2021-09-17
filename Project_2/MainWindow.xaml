@@ -1,0 +1,17 @@
+﻿<Window x:Class="Project_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="change_insert" HorizontalAlignment="Left" Height="25" Margin="116,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" Height="22"><Run Text="How much did the item cost?"/><LineBreak/></TextBlock>
+        <Button x:Name="recieve_Change" Content="Calculate Change" HorizontalAlignment="Left" Margin="116,182,0,0" VerticalAlignment="Top" Width="166" Click="recieve_Change_Click"/>
+        <TextBlock x:Name="return_Change" HorizontalAlignment="Left" Margin="390,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="219" Width="216"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="116,249,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click"/>
+
+    </Grid>
+</Window>

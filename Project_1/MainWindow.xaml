@@ -1,0 +1,21 @@
+﻿<Window x:Class="Project_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="monthly_Payment" HorizontalAlignment="Left" Height="23" Margin="114,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <TextBox x:Name="amount_Owed" HorizontalAlignment="Left" Height="23" Margin="485,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149"/>
+        <TextBlock x:Name="current_Monthly_Payment" HorizontalAlignment="Left" Margin="147,52,0,0" TextWrapping="Wrap" Text="Monthly Payment" VerticalAlignment="Top" Width="170"/>
+        <TextBlock x:Name="current_Amount_Owed" HorizontalAlignment="Left" Margin="510,52,0,0" TextWrapping="Wrap" Text="Amount Still Owed" VerticalAlignment="Top" Width="149"/>
+        <Button x:Name="generate_amount_left" Content="Button" HorizontalAlignment="Left" Margin="310,195,0,0" VerticalAlignment="Top" Width="173" Click="generate_amount_left_Click"/>
+        <TextBlock x:Name="amount_To_Interest" HorizontalAlignment="Left" Margin="147,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Height="29" RenderTransformOrigin="0.495,0.531"/>
+        <TextBlock x:Name="amount_To_Principal" HorizontalAlignment="Left" Margin="485,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="109"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,269,0,0" TextWrapping="Wrap" Text="Amount to Interest" VerticalAlignment="Top" Height="25" Width="137"/>
+        <TextBlock HorizontalAlignment="Left" Margin="485,269,0,0" TextWrapping="Wrap" Text="Amount to Principal" VerticalAlignment="Top" Height="25" Width="109"/>
+
+    </Grid>
+</Window>
