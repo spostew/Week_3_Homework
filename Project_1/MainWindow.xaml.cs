@@ -59,12 +59,31 @@ namespace Project_1
             // Calculates the amount that goes to principal
             double monthly_principal = payment - monthly_interest;
 
-            // Displays the results
-            amount_To_Interest.Text = "$" + monthly_interest.ToString();
-            amount_To_Principal.Text = "$" + monthly_principal.ToString();
+            // Displays the results in dollar format
+            amount_To_Interest.Text = monthly_interest.ToString("C2");
 
+            
+            if(monthly_interest > payment) { 
+                amount_To_Interest.Text = "Full payment goes to interest."; 
+            }
+            else { 
+                amount_To_Interest.Text = monthly_interest.ToString("C2"); 
+            }
+
+            // Alters the string based on the amount being entered
+            if (monthly_interest > monthly_principal) {
+                amount_To_Principal.Text = "None"; 
+            }
+            else {
+                amount_To_Principal.Text = monthly_principal.ToString("C2"); 
+            }
+            
         }
 
-        
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // closes program 
+            this.Close();
+        }
     }
 }

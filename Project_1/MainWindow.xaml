@@ -16,6 +16,7 @@
         <TextBlock x:Name="amount_To_Principal" HorizontalAlignment="Left" Margin="485,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="109"/>
         <TextBlock HorizontalAlignment="Left" Margin="147,269,0,0" TextWrapping="Wrap" Text="Amount to Interest" VerticalAlignment="Top" Height="25" Width="137"/>
         <TextBlock HorizontalAlignment="Left" Margin="485,269,0,0" TextWrapping="Wrap" Text="Amount to Principal" VerticalAlignment="Top" Height="25" Width="109"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="354,334,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
 
     </Grid>
 </Window>
